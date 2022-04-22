@@ -23,3 +23,11 @@ dropzone.addEventListener('drop', event => {
     const elemento = document.getElementById(id);
     dropzone.appendChild(elemento);
 });
+
+const box1 = document.getElementById('box-1');
+
+console.log(box1.innerText);
+
+const box2 = document.querySelector('#box-2');
+
+console.log(box2.innerText);

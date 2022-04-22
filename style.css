@@ -22,3 +22,9 @@
     border: 1px dashed rgb(233, 148, 148);
     background-color: rgb(80, 223, 67);
 }
+
+#box-1 {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+}
