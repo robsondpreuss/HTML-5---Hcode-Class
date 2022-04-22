@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hcode Web Dev</title>
+</head>
+<body>
+
+
+    <!-- 
+        Header, Section e Footer são chamados de elementos de bloco que ficam um em baixo do outro ocupando toda a linha com isso podemos posicionar ele em qualquer parte da tela com posicionamento absoluto.
+
+        Header, Section e Footer são semanticamente iguais em sua importancia, chamados de blocos, ou seja, são blocos que não são visíveis na tela, mas sim são utilizados para organizar o conteúdo da página.
+    -->
+
+    <!--
+        Atributos globais que podemos usar em todas as TAGS:
+
+        accesskey - Define uma tecla de atalho para focar no elemento.
+        class - Define quais classes CSS serão aplicadas no elemento.
+        contenteditable - Define se o conteúdo do elemento pode ou não ser editável.
+        data-* - Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome.
+        dir - Define a direção do conteúdo de um elemento.
+        draggable - Define se o elemento pode ser arrastado ou não.
+        dropzone - Define o que acontece quando o elemento arrastado é solto neste elemento.
+        hidden - Define o elemento como oculto.
+        id - Define uma identificação única para o elemento.
+        lang - Define a linguagem do conteúdo do elemento.
+        spellcheck - Define se o conteúdo do elemento deve ter sua ortografia verificada.
+        style - Define estilos CSS diretamente no elemento.
+        tabindex - Define a posição do elemento na ordem de tabulação da página.
+        title - Define informações sobre o elemento.
+        translate - Define se o conteúdo do elemento pode ser traduzido ou não
+    -->
+    <header>
+        <h1>Hcode - HTML 5</h1>
+        <nav></nav>
+    </header>
+
+    <section>
+        <div>
+            <!--
+                Google Chrome / Edge: ALT + TECLA DENTRO DO ACCESSKEY
+                FireFox: ALT + SHIFT + TECLA DENTRO DO ACCESSKEY
+            -->
+            <button type="button" accesskey="n">Novo</button>
+
+            <button type="button" accesskey="s">Salvar</button>
+        </div>
+
+        <div>
+            <!--
+                CLASS
+            -->
+            <button type="button" class="botao">OK</button>
+            <a href="#" class="botao">Link</a>
+        </div>
+
+        <div>
+            <!--
+                CONTENTEDITABLE - Ele faz uma edição em tempo de execução
+            -->
+            <p contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo molestias, deserunt sequi dolores repellat dignissimos quaerat doloribus eum adipisci vitae, maxime ea harum ut, minus fugiat iure ipsa ab voluptatibus.</p>
+        </div>
+
+        <div>
+            <!--
+                DATA-* - Usado para armazenar dados em um elemento. No lugar do (*) deve definir um nome. 
+            -->
+            <ul>
+                <li data-id="1" data-email="contoso@contoso.com">Contoso</li>
+                <li data-id="2" data-email="asdrubal@asdrubal.com">Asdrubal</li>
+            </ul>
+        </div>
+
+        <div>
+            <!--
+                DIR - Define a direção do conteúdo de um elemento.
+            -->
+            <p dir="ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi expedita, incidunt quo repellendus provident recusandae enim nemo? Praesentium fugit facere asperiores nostrum aliquam harum, eaque ipsum sint consequatur mollitia perferendis.</p>
+
+            <p dir="rtl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur impedit delectus expedita atque ex animi in neque placeat beatae cumque? Minima magnam maxime aspernatur est nam odit at rerum ipsa.</p>
+        </div>
+
+        <div>
+            <!--
+                DRAGGABLE - Podemos arrastar o elemento pela tela
+            -->
+            <button type="button" draggable="true">OK</button>
+            <div id="c1" class="quadrado" draggable="true"></div>
+            <br>
+            <div id="c2" class="quadrado" draggable="true"></div>
+        </div>
+
+        <div>
+            <!--
+                DROPZONE - Define o que acontece quando o elemento arrastado é solto neste elemento. 
+                
+                Este atriuto ainda não esta funcionando, mas está sendo implementado.
+                
+                Vamos fazer ele funcionar atraves de JS.
+            -->
+            <div id="dropzone" dropzone="copy">
+                <p>Arraste o quadrado para cá</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>Hcode Treinamentos</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
